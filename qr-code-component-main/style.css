@@ -9,20 +9,22 @@ body {
   background-color: hsl(212, 45%, 89%);
   min-height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.container {
+/* .container {
   max-width: 360px;
   margin: 0 auto;
-}
+} */
 
 .wrapper {
   background-color: hsl(0, 0%, 100%);
   padding: 19px;
   border-radius: 16px;
   text-align: center;
-  margin: 0 1em;
+  /* margin: 0 1em; */
+  max-width: 300px;
 }
 
 .wrapper img {
@@ -40,5 +42,5 @@ body {
 }
 
 .text p {
-     color: hsl(220, 15%, 55%);
+  color: hsl(220, 15%, 55%);
 }

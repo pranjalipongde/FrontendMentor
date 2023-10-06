@@ -1,0 +1,170 @@
+/* ## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) */
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/pattern-background-desktop.svg);
+  background-color: hsl(225, 100%, 94%);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  font-family: "Red Hat Display", sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 430px;
+  background-color: #fff;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.content {
+  padding: 2rem 2.3rem;
+}
+
+.content h1 {
+  text-align: center;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 15px;
+}
+
+.content p.text {
+  line-height: 1.5;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 22px;
+}
+
+.annual-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.5rem;
+  padding: 20px;
+}
+
+.left-plan {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.left-plan div {
+  margin-left: 20px;
+}
+
+.left-plan div h4 {
+  font-weight: 900;
+}
+
+.left-plan div p {
+  color: hsl(224, 23%, 55%);
+}
+
+.annual-plan a {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+
+.annual-plan a:hover {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+  transition: color 0.3s ease;
+}
+
+.btn {
+  margin: 1.8rem 0;
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 14px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+    font-size: 14px;
+  }
+  .wrapper {
+    max-width: 87%;
+  }
+
+  .content h1 {
+    font-size: 23px;
+  }
+
+  div.annual-plan {
+    padding: 12px;
+  }
+
+  .left-plan {
+    margin-left: 10px;
+  }
+
+  a.btn,
+  .cancel-btn,
+  .annual-plan a {
+    font-size: 13px;
+  }
+
+  .content {
+    padding: 9% 7%;
+  }
+}

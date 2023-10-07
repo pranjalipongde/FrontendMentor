@@ -1,0 +1,66 @@
+:root {
+  /* primary */
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-color: var(--dark-desaturated-blue);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content {
+  padding: 3.5rem;
+}
+
+.content h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.content h1 span {
+  color: var(--soft-violet);
+}
+
+.content .text {
+  color: var(--slightly-transparent-white);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */

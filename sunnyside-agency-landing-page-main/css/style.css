@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fffbf8;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: hsl(168, 34%, 41%);
+  border-radius: 10px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+header {
+  height: 100vh;
+  background-image: url(/images/desktop/image-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .header-top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+header .header-top .logo {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+header .header-top .logo h1 {
+  display: block;
+  padding: 1em;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+header .header-top nav {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header .header-top nav img {
+  display: flex;
+}
+header .header-top nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+header .header-top nav ul li a {
+  display: block;
+  padding: 1em;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+}
+header .header-top nav ul li .contact {
+  font-family: "Fraunces", serif;
+}/*# sourceMappingURL=style.css.map */

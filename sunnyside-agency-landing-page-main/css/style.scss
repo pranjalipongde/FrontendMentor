@@ -1,0 +1,95 @@
+$Fraunces: "Fraunces", serif;
+$Barlow: "Barlow", sans-serif;
+$Lato: "Lato", sans-serif;
+$titleArticle: #232a36;
+$pTagArticle: #9d9aa3;
+
+
+body {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     background-color: #fffbf8;
+}
+
+body::-webkit-scrollbar {
+     width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+     background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+     background-color:  hsl(168, 34%, 41%);
+     border-radius: 10px;
+}
+
+ul, li {
+     list-style: none;
+}
+
+header {
+     height: 100vh;
+     background-image: url(/images/desktop/image-header.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+     .header-top {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          position: absolute;
+          top: 0;
+
+          .logo {
+               display: flex;
+               align-items: center;
+               width: 50%;
+
+               h1 {
+                    display: block;
+                    padding:1em;
+                    font-family: $Lato;
+                    color: #ffffff;
+                    font-size: 1.6rem;
+               }
+          }
+
+          nav {
+               display: flex;
+               width: 50%;
+               flex-direction: row;
+               align-items: center;
+               justify-content: center;
+
+               img {
+                    display: flex;
+               }
+
+               ul {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 0.5em;
+
+                    li {
+                         a {
+                              display: block;
+                              padding: 1em;
+                              font-family: $Barlow;
+                              font-weight: 600;
+                              color: #ffffff;
+                              text-decoration: none;
+                         }
+
+                         .contact {
+                              font-family: $Fraunces;
+                             
+                         }
+                    }
+               }
+          }
+     }
+}
+

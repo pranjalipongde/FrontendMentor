@@ -12,7 +12,7 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- fontawesome -->
     <link
@@ -36,69 +36,195 @@
   <body>
     <!-- header -->
     <header>
-      <div class="container links-container">
+      <div class="header-top">
         <div class="logo">
-          <img src="/images/logo.svg" alt="logo" />
-        </div>
+          <img src="images/logo.svg" alt="logo" />
 
-        <div class="menu"></div>
+          <nav>
+            <img
+              src="/images/icon-hamburger.svg"
+              alt="menu icon"
+              id="show-nav"
+            />
 
-        <div class="navigation">
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#" class="yellow-btn button">Contact</a></li>
-          </ul>
-        </div>
+            <div class="triangle"></div>
 
-        <div class="container hero-text-container">
-          <h1 class="hero-text">We are creatives</h1>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#" class="contact">Contact</a></li>
+            </ul>
+
+            <div class="icon-wrap">
+              <h1>WE ARE CREATIVES</h1>
+              <img src="/images/icon-arrow-down.svg" alt="arrow down" />
+            </div>
+          </nav>
         </div>
       </div>
     </header>
 
     <!-- main -->
     <main>
-      <!-- section1 -->
-      <section class="first-section"></section>
+      <article id="article_1">
+        <section>
+          <h1>Transform your brand</h1>
+          <p>
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
 
-      <!-- section2 -->
-      <section class="second-section"></section>
+          <a href="#"
+            >Learn more
+            <hr
+          /></a>
+        </section>
 
-      <!-- categories -->
-      <div class="categories">
-        <div class="category1"></div>
-        <div class="category2"></div>
-      </div>
+        <div class="img-article">
+          <img
+            src="images/desktop/image-transform.jpg"
+            alt="egg image"
+            id="egg"
+          />
+        </div>
+      </article>
 
-      <!-- testimonial -->
-      <div class="testimonials"></div>
+      <article>
+        <div class="img-article">
+          <img
+            src="images/desktop/image-stand-out.jpg"
+            alt="standout img"
+            id="standout"
+          />
+        </div>
 
-      <!-- gallery
-       -->
-      <div class="gallery"></div>
+        <section>
+          <h1>Stand out to the right audience</h1>
+          <p>
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <p>Learn more</p>
+        </section>
+      </article>
+
+      <!-- footer -->
+      <article class="article-footer">
+        <div class="footer-box" id="box1">
+          <img
+            src="images/desktop/image-graphic-design.jpg"
+            alt=""
+            id="design"
+          />
+          <div class="img-text">
+            <h2 class="graphic-design">Graphic design</h2>
+            <p class="graphic-design">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-box" id="box2">
+          <img
+            src="images/desktop/image-photography.jpg"
+            alt=""
+            id="photography"
+          />
+          <div class="img-text">
+            <h2 class="graphic-design">Photography</h2>
+            <p class="graphic-design">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="client-testimonials">
+        <h1 class="testimonial-title">Client testimonials</h1>
+        <div class="testimonial-content">
+          <div class="testimonial-card">
+            <img src="images/image-emily.jpg" alt="Emily R" />
+            <p>
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <h3>Emily R.</h3>
+            <span>Marketing Director</span>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="images/image-thomas.jpg" alt="Thomas S" />
+            <p>
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <h3>Thomas R.</h3>
+            <span>Chief Operating Officer</span>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="images/image-jennie.jpg" alt="Jennie F." />
+            <p>
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <h3>Jennie F.</h3>
+            <span>Business Owner</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="clipper">
+        <img
+          src="images/desktop/image-gallery-milkbottles.jpg"
+          alt="milk"
+          id="milk"
+        />
+        <img
+          src="images/desktop/image-gallery-orange.jpg"
+          alt="orange"
+          id="orange"
+        />
+        <img src="images/desktop/image-gallery-cone.jpg" alt="cone" id="cone" />
+        <img
+          src="images/desktop/image-gallery-sugarcubes.jpg"
+          alt="sugarcubes"
+          id="sugarcubes"
+        />
+      </article>
     </main>
 
     <!-- footer -->
-    <footer></footer>
+    <footer>
+      <h2>Sunnyside</h2>
+      <nav class="link-us">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+      </nav>
+
+      <div class="socials">
+        <a href="#"><img src="images/icon-facebook.svg" alt="facebook" /></a>
+
+        <a href="#"><img src="images/icon-instagram.svg" alt="instagram" /></a>
+
+        <a href="#"><img src="images/icon-twitter.svg" alt="twitter" /></a>
+
+        <a href="#"><img src="images/icon-pinterest.svg" alt="pinterest" /></a>
+      </div>
+    </footer>
 
     <!-- 
-     Transform your brand We are a full-service creative agency
-    specializing in helping brands grow fast. Engage your clients through
-    compelling visuals that do most of the marketing for you. Learn more Stand
-    out to the right audience Using a collaborative formula of designers,
-    researchers, photographers, videographers, and copywriters, we’ll build and
-    extend your brand in digital places. Learn more Graphic design Great design
-    makes you memorable. We deliver artwork that underscores your brand message
-    and captures potential clients’ attention. Photography Increase your
-    credibility by getting the most stunning, high-quality photos that improve
-    your business image. Client testimonials We put our trust in Sunnyside and
-    they delivered, making sure our needs were met and deadlines were always
-    hit. Emily R. Marketing Director Sunnyside’s enthusiasm coupled with their
-    keen interest in our brand’s success made it a satisfying and enjoyable
-    experience. Thomas S. Chief Operating Officer Incredible end result! Our
-    sales increased over 400% when we worked with Sunnyside. Highly recommended!
-    Jennie F. Business Owner About Services Projects Contact -->
+            
+     About Services Projects Contact -->
+
+    <!--js file -->
+    <script src="js/script.js"></script>
   </body>
 </html>

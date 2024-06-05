@@ -1,0 +1,93 @@
+:root {
+  --primary-light-cyan: hsl(193, 38%, 86%);
+  --primary-neon-green: hsl(150, 100%, 66%);
+  --neutral-grayish-blue: hsl(217, 19%, 38%);
+  --neutral-dark-grayish-blue: hsl(217, 19%, 24%);
+  --neutral-dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  background: var(--neutral-dark-blue);
+  color: white;
+  font-family: "Manrope", sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 400px;
+  height: auto;
+  background: var(--neutral-dark-grayish-blue);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card > h6 {
+  color: var(--primary-neon-green);
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+#advice-text {
+  margin: 1rem 0;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--primary-light-cyan);
+}
+
+.devider {
+  width: 100%;
+  color: var(--primary-light-cyan);
+  padding: 10px;
+  margin-bottom: 35px;
+}
+
+#dice-button {
+  display: flex;
+  align-items: center;
+
+  background: var(--primary-neon-green);
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: absolute;
+  bottom: -1.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#dice-button:hover {
+  background: hsl(150, 100%, 76%);
+  box-shadow: 0 0 20px var(--primary-light-cyan);
+}
+
+#dice-button img {
+  width: 1.5rem;
+  height: 1.5rem;
+}

@@ -29,6 +29,8 @@ body {
   font-family: "Red Hat Display", sans-serif;
   position: relative;
   text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 p {
@@ -58,7 +60,8 @@ p {
 }
 
 .content p.text {
-  line-height: 1.5;
+  line-height: 2;
+  font-size: 1.15rem;
   color: hsl(224, 23%, 55%);
   margin-bottom: 22px;
 }
@@ -70,6 +73,10 @@ p {
   background-color: hsl(225, 100%, 98%);
   border-radius: 0.5rem;
   padding: 20px;
+}
+
+.annual-plan .change {
+  color: hsl(245, 75%, 52%);
 }
 
 .left-plan {

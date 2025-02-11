@@ -52,8 +52,6 @@
   }
 }
 
-/* // https://piccalil.li/blog/a-modern-css-reset */
-
 /* Box sizing rules */
 *,
 *::before,
@@ -126,6 +124,10 @@ svg {
   margin-inline: auto;
 }
 
+:where(.flow :not(:first-child)) {
+  margin-top: var(--flow-spacer, 3em);
+}
+
 .even-columns {
   display: grid;
   gap: 1rem;
@@ -194,17 +196,34 @@ body {
   display: none;
 }
 
-.nac-list {
+.nav-list {
   font-size: var(--fs-nav);
+}
+
+.nav-list {
+  display: flex;
+  gap: clamp(var(--size-400), 5vw, var(--size-700));
+  font-weight: var(--fw-semi-bold);
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--clr-primary-400);
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--clr-accent-400);
 }
 
 @media (max-width: 50em) {
   .primary-navigation {
     display: none;
-
     position: fixed;
     padding: var(--size-700);
     inset: 7em var(--size-400) auto;
+    max-width: 25rem;
+    margin-left: auto;
     background: var(--clr-neutral-100);
     border-radius: var(--size-100);
     box-shadow: 0 0 0.75em rgb(0, 0, 0.05);
@@ -222,16 +241,6 @@ body {
     gap: var(--size-400);
     text-align: center;
     font-weight: var(--fw-bold);
-  }
-
-  .nav-list a {
-    text-decoration: none;
-    color: var(--clr-primary-400);
-  }
-
-  .nav-list a:hover,
-  .nav-list a:focus {
-    color: var(--clr-accent-400);
   }
 
   .primary-navigation[data-visible] {

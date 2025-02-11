@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form id="contactFrom">
+        <h1 id="formTitle">Contact Us</h1>
+
+        <div class="form-row">
+          <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required />
+            <span class="error" id="fristNameError"></span>
+          </div>
+          
+          <div>
+            <label for="lasstName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required />
+            <span class="error" id="lastNameError"></span>
+          </div>
+        </div>
+
+        <div>
+          <label for="firstName">Email Address</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error" id="emailError"></span>
+        </div>
+
+        <fieldset>
+          <legend>Query Type</legend>
+
+          <label>
+            <input
+              type="radio"
+              name="queryType"
+              value="general"
+              required
+              aria-required="true"
+            />
+            General Enquiry
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="queryType"
+              value="support"
+              required
+              aria-required="true"
+            />
+            Support Request
+          </label>
+
+          <span class="error" id="queryTypeError" aria-live="polite"></span>
+        </fieldset>
+
+        <label for="message">Message</label>
+        <textarea
+          name="message"
+          id="message"
+          required
+          aria-required="true"
+        ></textarea>
+        <span class="error" id="messageError" aria-live="polite"></span>
+
+        <label>
+          <input
+            type="checkbox"
+            id="consent"
+            name="consent"
+            required
+            aria-required="true"
+          />
+        </label>I consent to being contacted by the team
+      </label>
+        <span class="error" id="consentError" aria-live="polite"></span>
+
+        <button type="button">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
